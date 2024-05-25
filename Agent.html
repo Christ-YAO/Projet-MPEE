@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMPE Profil_Agent</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="http://www.energie.gouv.ci/assets/images/icone.ico">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Main Container Start -->
+    <div class="main-container">
+        <!-- Aside Start -->
+        <aside class="aside">
+            <div class="hero">
+                <div class="img-container">
+                    <a href="#">
+                        <img src="images/Hero.png" alt="Photo De Profil">
+                    </a>
+                </div>
+                <h1>Hero Name</h1>
+                <p>Poste Hero</p>
+            </div>
+            <div class="nav-toggle">
+                <i class="fa show fa-bars"></i>
+            </div>
+            <ul class="nav">
+                <li>
+                    <a href="#home" class="active">
+                        <i class="fa fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#profil">
+                        <i class="fa fa-user"></i>
+                        Profil
+                    </a>
+                </li>
+                <li>
+                    <a href="#forma">
+                        <i class="fas fa-book"></i>
+                        Formation
+                    </a>
+                </li>
+                <li>
+                    <a href="#demande">
+                        <i class="fa fa-list"></i>
+                        Demande
+                    </a>
+                </li>
+                <li>
+                    <a href="#suivi">
+                        <i class="fa fa-eye"></i>
+                        Suivi
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <i class="fa fa-comments"></i>
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-arrow-right-from-bracket"></i>
+                        Déconnexion
+                    </a>
+                </li>
+            </ul>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fa fa-facebook"></i>
+                    <span>Facebook</span></a></li>
+                <li><a href="#"><i class="fa fa-whatsapp"></i>
+                    <span>Whatsapp</span></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i>
+                    <span>Twitter</span></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i>
+                    <span>Linkedin</span></a></li>
+            </ul>
+        </aside>
+        <!-- Aside End -->
+
+        <!-- Main Content Start -->
+        <div class="main-content">
+            <!-- Home Section Start -->
+            <section class="home active section" id="home">
+                <nav>
+                    <div class="nav-center">
+                        <div class="logo">
+                            <a href="#"><img src="images/logo.png" alt="logo Ministère Des Mines, du Pétrole et de l'Energie renouvelable"></a>
+                        </div>
+                        <div class="armoirie">
+                            <img src="images/armoirie.png" alt="Armoirie de la République de Côte d'Ivoire">
+                        </div>
+                    </div>
+                </nav>
+                <div class="section-title padd-15"> 
+                    <h2>Home</h2>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info padd-15">
+                            <h3 class="hello">
+                                Bienvenue sur votre profil <span class="post">Monsieur / Madame ou Mademoiselle</span>
+                            </h3>
+                            <h3 class="my-profession">Je suis un <span class="typing"></span></h3>
+                            <p>Je suis un développeur web avec une vaste expérience depuis quelques années. Mon expertise est la création et la conception de sites Web, la conception graphique et bien d'autres...</p>
+                            <a href="#contact" class="btn hire">Contacter l'Administrateur</a>
+                        </div>
+                        <div class="home-img padd-15">
+                            <img src="images/undraw_join_re_w1lh.svg" alt="Home Image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Home Section End -->
+
+            <!-- Profil Section Start -->
+            <section class="profil section" id="profil">
+                <div class="container">
+                    <nav>
+                        <div class="nav-center">
+                            <div class="logo">
+                                <a href="#"><img src="images/logo.png" alt="logo Ministère Des Mines, du Pétrole et de l'Energie renouvelable"></a>
+                            </div>
+                            <div class="armoirie">
+                                <img src="images/armoirie.png" alt="Armoirie de la République de Côte d'Ivoire">
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="section-title padd-15"> 
+                        <h2>Profil</h2>
+                    </div>
+                    <div class="nb"><span>*</span>Veillez obligatoiremenent remplire tous les champs afin de mettre à jour votre profil.</div>
+                    <div class="forms">
+                        <form action="">
+                            <div class="inputs">
+                                <input type="text" name="nom" id="nom" required disabled>
+                                <label for="nom" class="placeholder">Nom</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="text" name="pren" id="pren" required disabled>
+                                <label for="pren" class="placeholder">Prénom</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="date" name="dat-nai" id="dat-nai" required disabled>
+                                <label for="dat-nai" class="placeholder dat">Date de Naissance</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="text" name="lieu-nai" id="lieu-nai" required disabled>
+                                <label for="lieu-nai" class="placeholder">Lieu</label>
+                            </div>
+                            <div class="inputs .select">
+                                <select name="nat-id" id="nat-id" disabled>
+                                    <option value="cni">Carte National d'Identé</option>
+                                    <option value="att">Attestation d'Indentité</option>
+                                    <option value="pass">Passport</option>
+                                </select>
+                                <label for="nat-id" class="placeholder">Nature de l'acte d'indenté</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="text" name="num-id" id="num-id" required disabled>
+                                <label for="num-id" class="placeholder">Numéro d'identité</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="text" name="natio" id="natio" required disabled>
+                                <label for="natio" class="placeholder">Nationnalité</label>
+                            </div>
+                            <div class="inputs .select">
+                                <select name="sexe" id="sexe" disabled>
+                                    <option value="masculin">Masculin</option>
+                                    <option value="feminin">Feminin</option>
+                                </select>
+                                <label for="sexe" class="placeholder">Genre</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="text" name="nom-p" id="nom-p" required disabled>
+                                <label for="nom-p" class="placeholder">Nom & Prénom du Père</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="text" name="nom-m" id="nom-m" required disabled>
+                                <label for="nom-m" class="placeholder">Nom & Prénom de la Mère</label>
+                            </div>
+                            <div class="inputs .select">
+                                <select name="sit-mat" id="sit-mat" disabled>
+                                    <option value="marie">Marié(e)</option>
+                                    <option value="celibataire">Célibataire</option>
+                                </select>
+                                <label for="sit-mat" class="placeholder">Situation Matrimoniale</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="number" name="nbr-eft" id="nbr-eft" max="10" required disabled>
+                                <label for="nbr-eft" class="placeholder">Nombre d'enfant</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="text" name="matr" id="matr" required disabled>
+                                <label for="matr" class="placeholder">Matricule</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="text" name="num-cand" id="num-cand" required disabled>
+                                <label for="num-cand" class="placeholder">N° Candidature</label>
+                            </div>
+                            <div class="inputs .select">
+                                <select name="grade" id="grade" disabled>
+                                    <!-- <option selected disabled value=""></option> -->
+                                </select>
+                                <label for="grade" class="placeholder">Grade</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="text" name="emploi" id="emploi" required disabled>
+                                <label for="emploi" class="placeholder">Emploi</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="text" name="adr-post" id="adr-post" required disabled>
+                                <label for="adr-post" class="placeholder">Adresse Postale</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="text" name="tel" id="tel" required disabled>
+                                <label for="tel" class="placeholder">Téléphone</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="email" name="mail" id="mail" required placeholder="Ex : email@adress.com/ci/fr" disabled>
+                                <label for="mail" class="placeholder">E-mail</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="text" name="suphie" id="suphie" required disabled>
+                                <label for="suphie" class="placeholder">Supérieur Hiérarchique</label>
+                            </div>
+                            
+                            <div class="div-form-btn">
+                                    <button class="form-btn"><a href="/Update Page.html" class="link-btn">Update</a></button>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- Profil Section End -->
+
+            <!-- Add Formation Section Start -->
+            <section class="add-form section" id="forma">
+                <div class="container">
+                    <nav>
+                        <div class="nav-center">
+                            <div class="logo">
+                                <a href="#"><img src="images/logo.png" alt="logo Ministère Des Mines, du Pétrole et de l'Energie renouvelable"></a>
+                            </div>
+                            <div class="armoirie">
+                                <img src="images/armoirie.png" alt="Armoirie de la République de Côte d'Ivoire">
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="section-title padd-15"> 
+                        <h2>Add Formation</h2>
+                    </div>
+                    <div class="nb"><span>*</span>Veillez obligatoiremenent remplire tous les champs afin d'ajouter un nouvel formation.</div>
+                    <div class="forms">
+                        <form action="">
+                            <div class="inputs">
+                                <input type="text" name="lib_form" id="lib_form" required>
+                                <label for="lib_form" class="placeholder">Libelle</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="text" name="niv_form" id="niv_form" required>
+                                <label for="niv_form" class="placeholder">Niveau</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="text" name="lieu_form" id="lieu_form" required>
+                                <label for="lieu_form" class="placeholder">Lieu</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="text" name="cout_form" id="cout_form" required>
+                                <label for="cout_form" class="placeholder">Coût</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="date" name="datDeb_form" id="datDeb_form" required>
+                                <label for="datDeb_form" class="placeholder dat">Date de Début</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="date" name="datFin_form" id="datFin_form" required>
+                                <label for="datFin_form" class="placeholder dat">Date de Fin</label>
+                            </div>
+                            <div class="inputs textarea">
+                                <textarea name="objGl_form" id="objGl_form" required></textarea>
+                                <label for="objGl_form" class="placeholder">Objectif Global</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="text" name="cab_form" id="cab_form" required>
+                                <label for="cab_form" class="placeholder">Cabinet de Formation</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="text" name="adrCab_form" id="adrCab_form" required>
+                                <label for="adrCab_form" class="placeholder">Adresse du Cabinet</label>
+                            </div>
+                            <div class="div-form-btn">
+                                <button class="form-btn">Add</button>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- Add Formation Section End -->
+
+
+             <!-- Demande Section Start -->
+             <section class="demande section" id="demande">
+                <div class="container">
+                    <nav>
+                        <div class="nav-center">
+                            <div class="logo">
+                                <a href="#"><img src="images/logo.png" alt="logo Ministère Des Mines, du Pétrole et de l'Energie renouvelable"></a>
+                            </div>
+                            <div class="armoirie">
+                                <img src="images/armoirie.png" alt="Armoirie de la République de Côte d'Ivoire">
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="section-title padd-15"> 
+                        <h2>Liste des Demandes de Formation</h2>
+                    </div>
+                    <div class="demande">
+                      
+                    </div>
+                </div>
+            </section>
+            <!-- Demande Section End -->
+
+
+            <!-- Suivi Section Start -->
+            <section class="suivi section" id="suivi">
+                <div class="container">
+                    <nav>
+                        <div class="nav-center">
+                            <div class="logo">
+                                <a href="#"><img src="images/logo.png" alt="logo Ministère Des Mines, du Pétrole et de l'Energie renouvelable"></a>
+                            </div>
+                            <div class="armoirie">
+                                <img src="images/armoirie.png" alt="Armoirie de la République de Côte d'Ivoire">
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="section-title padd-15"> 
+                        <h2>Suivi du statut de ma demande</h2>
+                    </div>
+                    <div class="Lists">
+                      
+                    </div>
+                </div>
+            </section>
+            <!-- Suivi Section End -->
+
+
+            <!-- Contact Section Start -->
+            <section class="contact section" id="contact">
+                <div class="container">
+                    <nav>
+                        <div class="nav-center">
+                            <div class="logo">
+                                <a href="#"><img src="images/logo.png" alt="logo Ministère Des Mines, du Pétrole et de l'Energie renouvelable"></a>
+                            </div>
+                            <div class="armoirie">
+                                <img src="images/armoirie.png" alt="Armoirie de la République de Côte d'Ivoire">
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="section-title padd-15"> 
+                        <h2>Contact</h2>
+                    </div>
+                    <div class="contact">
+                        <div class="nb"><span>*</span>Veillez obligatoiremenent remplire tous les champs afin d'envoyer un message</div>
+                    <div class="forms">
+                        <form action="">
+                            <div class="inputs">
+                                <input type="text" name="nom" id="nom" required>
+                                <label for="nom" class="placeholder">Nom</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="email" name="mail" id="mail" required placeholder="Ex : email@adress.com/ci/fr" value="adminmmpe@email.ci">
+                                <label for="mail" class="placeholder">E-mail</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="text" name="obj" id="obj" required>
+                                <label for="obj" class="placeholder">Objet</label>
+                            </div>
+                            <div class="inputs textarea">
+                                <textarea name="msg" id="msg" required></textarea>
+                                <label for="msg" class="placeholder">Message</label>
+                            </div>
+                            <div class="div-form-btn">
+                                <button class="form-btn">Send</button>
+                            </div>
+                            
+                        </form>
+                    </div>
+                    
+                                <!-- Footer Start -->
+        <!-- <footer> -->
+        <!-- <footer>
+            <ul class="site-gouv">
+                <div class="list-center">
+                  <li><a target="_blank" href="http://www.gouv.ci/">gouv.ci</a></li>
+                  <li><a target="_blank" href="http://www.eadministration.gouv.ci/">eadministration.gouv</a></li>
+                  <li><a target="_blank" href="http://www.annuaire.gouv.ci/">annuaire.gouv.ci</a></li>
+                  <li><a target="_blank" href="http://www.participationcitoyenne.gouv.ci/">participationcitoyenne.gouv.ci</a></li>
+                  <li><a target="_blank" href="http://www.servicepublic.gouv.ci/">servicepublic.gouv.ci</a></li>
+                  <li><a target="_blank" href="http://www.data.gouv.ci/">data.gouv.ci</a></li>
+                </div>
+              </ul>
+        </footer> -->
+        <!-- Footer End -->
+
+                </div>
+            </section>
+            <!-- Contact Section End -->
+
+
+
+        </div>
+        <!-- Main Content End -->
+    </div>
+    <!-- Main Container End -->
+
+
+    <!-- JavaScript -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script> -->
+    <script src="JS/app.js"></script>
+</body>
+</html>

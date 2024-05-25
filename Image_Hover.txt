@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGE HOVER</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./Image_Hover.css">
+</head>
+<body>
+    <div class="container">
+        <div class="clip clip1">
+            <div class="content">
+                <h2>Post Title One</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ad saepe ullam vitae assumenda odit quisquam, dolore nobis sapiente similique.</p>
+            </div>
+        </div>
+        <div class="clip clip2">
+            <div class="content">
+                <h2>Post Title Two</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ad saepe ullam vitae assumenda odit quisquam, dolore nobis sapiente similique.</p>
+            </div>
+        </div>
+        <div class="clip clip3">
+            <div class="content">
+                <h2>Post Title Three</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ad saepe ullam vitae assumenda odit quisquam, dolore nobis sapiente similique.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+==========================CSS=================================
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111;
+}
+
+.container {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background: #222;
+}
+
+.container .clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.container .clip.clip1 {
+    background: url(./img/grab-a-coffee.jpg) no-repeat center/cover;
+    clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%);
+}
+
+.container .clip.clip2 {
+    background: url(./img/portrait.jpg) no-repeat center/cover;
+    clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
+}
+
+.container .clip.clip3 {
+    background: url(./img/design.jpg) no-repeat center/cover;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
+}
+
+/* .container:hover .clip {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+} */
+
+.container .clip:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    z-index: 100;
+    transition: 0.5s;
+}
+
+.container .clip .content {
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    padding: 20px;
+    width: 70%;
+    background: #fff;
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+}
+
+.container .clip:hover .content {
+    opacity: 1;
+    bottom: 0;
+}

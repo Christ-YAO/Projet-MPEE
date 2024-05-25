@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMPE Administrateur</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="http://www.energie.gouv.ci/assets/images/icone.ico">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Main Container Start -->
+    <div class="main-container">
+        <!-- Aside Start -->
+        <aside class="aside">
+            <div class="hero">
+                <div class="img-container">
+                    <a href="#">
+                        <img src="images/Hero.png" alt="Photo De Profil">
+                    </a>
+                </div>
+                <h1>Hero Name</h1>
+                <p>Poste Hero</p>
+            </div>
+            <div class="nav-toggle">
+                <i class="fa sidebar fa-bars"></i>
+            </div>
+            <ul class="nav">
+                <li>
+                    <a href="#home" class="active">
+                        <i class="fa fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#add">
+                        <i class="fa-solid fa-user-plus"></i>
+                        Ajouter
+                    </a>
+                </li>
+                <li>
+                    <a href="#list">
+                        <i class="fa fa-list"></i>
+                        Liste
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <i class="fa fa-comments"></i>
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-arrow-right-from-bracket"></i>
+                        Déconnexion
+                    </a>
+                </li>
+            </ul>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fa fa-facebook"></i>
+                    <span>Facebook</span></a></li>
+                <li><a href="#"><i class="fa fa-whatsapp"></i>
+                    <span>Whatsapp</span></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i>
+                    <span>Twitter</span></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i>
+                    <span>Linkedin</span></a></li>
+            </ul>
+        </aside>
+        <!-- Aside End -->
+
+        <!-- Main Content Start -->
+        <div class="main-content">
+            <!-- Home Section Start -->
+            <section class="home active section" id="home">
+                <nav>
+                    <div class="nav-center">
+                        <div class="logo">
+                            <a href="#"><img src="images/logo.png" alt="logo Ministère Des Mines, du Pétrole et de l'Energie renouvelable"></a>
+                        </div>
+                        <div class="armoirie">
+                            <img src="images/armoirie.png" alt="Armoirie de la République de Côte d'Ivoire">
+                        </div>
+                    </div>
+                </nav>
+                <div class="section-title padd-15"> 
+                    <h2>Home</h2>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info padd-15">
+                            <h3 class="hello">
+                                Bienvenue sur votre profil Mr/Mme <span class="post">L'Administrateur.</span>
+                            </h3>
+                            <h3 class="my-profession">Je suis un <span class="typing">Développeur Web</span></h3>
+                            <p>Je suis un développeur web avec une vaste expérience depuis quelques années. Mon expertise est la création et la conception de sites Web, la conception graphique et bien d'autres...</p>
+                            <a href="#contact" class="btn hire">Contacter un agent</a>
+                        </div>
+                        <div class="home-img padd-15">
+                            <img src="images/undraw_progressive_app_m-9-ms.svg" alt="Home Image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Home Section End -->
+
+            <!-- Add Section Start -->
+            <section class="add section" id="add">
+                <div class="container">
+                    <nav>
+                        <div class="nav-center">
+                            <div class="logo">
+                                <a href="#"><img src="images/logo.png" alt="logo Ministère Des Mines, du Pétrole et de l'Energie renouvelable"></a>
+                            </div>
+                            <div class="armoirie">
+                                <img src="images/armoirie.png" alt="Armoirie de la République de Côte d'Ivoire">
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="section-title padd-15"> 
+                        <h2>Add New Agent</h2>
+                    </div>
+                    <div class="nb"><span>*</span>Veillez obligatoiremenent remplire tous les champs afin d'ajouter un nouvel agent.</div>
+                    <div class="forms">
+                        <form action="">
+                            <div class="inputs">
+                                <input type="text" name="mat" id="mat" required>
+                                <label for="mat" class="placeholder">Matricule</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="text" name="name" id="name" required>
+                                <label for="name" class="placeholder">Nom</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="text" name="pren" id="pren" required>
+                                <label for="pren" class="placeholder">Prénom</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="date" name="date" id="date" required>
+                                <label for="dat" class="placeholder dat">Date de Naissance</label>
+                            </div>
+                            <div class="inputs .select">
+                                <select name="poste" id="poste">
+                                    
+                                    <option value="dev_web">Développeur Web</option>
+                                    <option value="des_web">Designer Web</option>
+                                    <option value="gra_des">Graphic Designer</option>
+                                    <option value="maint">Maintencier</option>
+                                    <option value="dew_res">Développeur Réseau</option>
+                                </select>
+                                <label for="poste" class="placeholder">Poste</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="password" name="mdp" id="mdp" required>
+                                <div class="show-password">
+                                    <i class="show-now fa fa-eye-slash"></i>
+                                </div>
+                                <label for="mdp" class="placeholder">Mot de passe</label>
+                            </div>
+                            <div class="div-form-btn">
+                                <button class="form-btn">Add</button>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- Add Section End -->
+
+
+            <!-- List Section Start -->
+            <section class="list section" id="list">
+                <div class="container">
+                    <nav>
+                        <div class="nav-center">
+                            <div class="logo">
+                                <a href="#"><img src="images/logo.png" alt="logo Ministère Des Mines, du Pétrole et de l'Energie renouvelable"></a>
+                            </div>
+                            <div class="armoirie">
+                                <img src="images/armoirie.png" alt="Armoirie de la République de Côte d'Ivoire">
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="section-title padd-15"> 
+                        <h2>Liste des Agents</h2>
+                    </div>
+                    <div class="Lists">
+                      
+                    </div>
+                </div>
+            </section>
+            <!-- List Section End -->
+
+
+            <!-- Contact Section Start -->
+            <section class="contact section" id="contact">
+                <div class="container">
+                    <nav>
+                        <div class="nav-center">
+                            <div class="logo">
+                                <a href="#"><img src="images/logo.png" alt="logo Ministère Des Mines, du Pétrole et de l'Energie renouvelable"></a>
+                            </div>
+                            <div class="armoirie">
+                                <img src="images/armoirie.png" alt="Armoirie de la République de Côte d'Ivoire">
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="section-title padd-15"> 
+                        <h2>Contact</h2>
+                    </div>
+                    <div class="contact">
+                        <div class="nb"><span>*</span>Veillez obligatoiremenent remplire tous les champs afin d'ajouter un nouvel agent.</div>
+                    <div class="forms">
+                        <form action="">
+                            
+                            <div class="inputs">
+                                <input type="email" name="mail" id="mail" required placeholder="Ex : email@adress.com/ci/fr">
+                                <label for="mail" class="placeholder">E-mail</label>
+                            </div>
+                            <div class="inputs">
+                                <input type="text" name="obj" id="obj" required>
+                                <label for="obj" class="placeholder">Objet</label>
+                            </div>
+                            <div class="inputs textarea">
+                                <textarea name="msg" id="msg" required></textarea>
+                                <label for="msg" class="placeholder">Message</label>
+                            </div>
+                            <div class="div-form-btn ">
+                                <button class="form-btn">Send</button>
+                            </div>
+                            
+                        </form>
+                    </div>
+                    
+
+
+                </div>
+            </section>
+            <!-- Contact Section End -->
+
+        </div>
+        <!-- Main Content End -->
+    </div>
+    <!-- Main Container End -->
+
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+    <script src="JS/app.js"></script>
+</body>
+</html>

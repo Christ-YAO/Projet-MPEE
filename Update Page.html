@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMPE Update Page</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="http://www.energie.gouv.ci/assets/images/icone.ico">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Update Section Start -->
+    <section class="update section" id="update">
+        <div class="container">
+            <nav>
+                <div class="nav-center">
+                    <div class="logo">
+                        <a href="#"><img src="images/logo.png" alt="logo Ministère Des Mines, du Pétrole et de l'Energie renouvelable"></a>
+                    </div>
+                    <div class="armoirie">
+                        <img src="images/armoirie.png" alt="Armoirie de la République de Côte d'Ivoire">
+                    </div>
+                </div>
+            </nav>
+            <div class="section-title padd-15"> 
+                <h2>Update</h2>
+            </div>
+            <div class="nb"><span>*</span>Veillez obligatoiremenent remplire tous les champs afin de mettre à jour votre profil.</div>
+            <div class="forms">
+                <form action="">
+                    <div class="inputs">
+                        <input type="text" name="nom" id="nom" required disabled>
+                        <label for="nom" class="placeholder">Nom</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" name="pren" id="pren" required disabled>
+                        <label for="pren" class="placeholder">Prénom</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="date" name="dat-nai" id="dat-nai" required disabled>
+                        <label for="dat-nai" class="placeholder dat">Date de Naissance</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" name="lieu-nai" id="lieu-nai" required>
+                        <label for="lieu-nai" class="placeholder">Lieu</label>
+                    </div>
+                    <div class="inputs .select">
+                        <select name="nat-id" id="nat-id">
+                            <option value="cni">Carte National d'Identé</option>
+                            <option value="att">Attestation d'Indentité</option>
+                            <option value="pass">Passport</option>
+                        </select>
+                        <label for="nat-id" class="placeholder">Nature de l'acte d'indenté</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" name="num-id" id="num-id" required>
+                        <label for="num-id" class="placeholder">Numéro d'identité</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" name="natio" id="natio" required>
+                        <label for="natio" class="placeholder">Nationnalité</label>
+                    </div>
+                    <div class="inputs .select">
+                        <select name="sexe" id="sexe">
+                            <option value="masculin">Masculin</option>
+                            <option value="feminin">Feminin</option>
+                        </select>
+                        <label for="sexe" class="placeholder">Genre</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" name="nom-p" id="nom-p" required>
+                        <label for="nom-p" class="placeholder">Nom & Prénom du Père</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" name="nom-m" id="nom-m" required>
+                        <label for="nom-m" class="placeholder">Nom & Prénom de la Mère</label>
+                    </div>
+                    <div class="inputs .select">
+                        <select name="sit-mat" id="sit-mat">
+                            <option value="marie">Marié(e)</option>
+                            <option value="celibataire">Célibataire</option>
+                        </select>
+                        <label for="sit-mat" class="placeholder">Situation Matrimoniale</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="number" name="nbr-eft" id="nbr-eft" max="10" required>
+                        <label for="nbr-eft" class="placeholder">Nombre d'enfant</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" name="matr" id="matr" required disabled>
+                        <label for="matr" class="placeholder">Matricule</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" name="num-cand" id="num-cand" required>
+                        <label for="num-cand" class="placeholder">N° Candidature</label>
+                    </div>
+                    <div class="inputs .select">
+                        <select name="grade" id="grade">
+                            <!-- <option selected disabled value=""></option> -->
+                        </select>
+                        <label for="grade" class="placeholder">Grade</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" name="emploi" id="emploi" required>
+                        <label for="emploi" class="placeholder">Emploi</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="date" name="dat-nomi" id="dat-nomi" required>
+                        <label for="dat-nomi" class="placeholder dat">Date de Nomination</label>
+                    </div>
+                    <div class="inputs .select">
+                        <select name="nat-act-nomi" id="nat-act-nomi">
+                            <!-- <option selected disabled value=""></option> -->
+                        </select>
+                        <label for="nat-act-nomi" class="placeholder">Nature Acte de Nomination</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" name="num-act-nomi" id="num-act-nomi" required>
+                        <label for="num-act-nomi" class="placeholder">Numéro Acte de Nomination</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="date" name="dat-sign" id="dat-sign" required>
+                        <label for="dat-sign" class="placeholder dat">Date Signature Acte de Nomination</label>
+                    </div>
+                    <div class="inputs .select">
+                        <select name="sit-mili" id="sit-mili">
+                            <option selected value="apte">Apte</option>
+                            <option selected value="inapte">Inapte</option>
+                            <option selected value="sans-objet">Sans Objet</option>
+                        </select>
+                        <label for="sit-mili" class="placeholder">Situation Militaire</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" name="adr-post" id="adr-post" required>
+                        <label for="adr-post" class="placeholder">Adresse Postale</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" name="tel" id="tel" required>
+                        <label for="tel" class="placeholder">Téléphone</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="email" name="mail" id="mail" required placeholder="Ex : email@adress.com/ci/fr">
+                        <label for="mail" class="placeholder">E-mail</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" name="suphie" id="suphie" required>
+                        <label for="suphie" class="placeholder">Supérieur Hiérarchique</label>
+                    </div>
+                    
+                    <div class="div-form-btn">
+                            <button class="form-btn"><a href="/Agent.html" class="link-btn">Update</a></button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Update Section End -->
+</body>
+</html>
